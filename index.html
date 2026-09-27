@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Список продуктов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    .purchased {text-decoration: line-through;}
+    li:hover {cursor: pointer;}
+</style>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Список продуктов</h1>
+
+    <label for="productInput">Продукт:</label>
+    <input id="productInput" type="text" />
+
+    <button id="addButton" type="button">Добавить</button>
+
+    <ul id="productList"></ul>
+  </body>
 </html>
