@@ -8,7 +8,7 @@
     .purchased {text-decoration: line-through;}
     li:hover {cursor: pointer;}
 </style>
-    <script src="./script.js" defer></script>
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
     <h1>Список продуктов</h1>
@@ -17,7 +17,17 @@
     <input id="productInput" type="text" />
 
     <button id="addButton" type="button">Добавить</button>
-
+    <button id="showListButton" type="button">Показать список</button>
     <ul id="productList"></ul>
+
+    <label for="dishInput">Блюдо:</label>
+<input id="dishInput" type="text" placeholder="Например, борщ">
+
+<button id="findMissingButton" type="button">
+    Найти недостающие
+</button>
+<h2>Недостающие продукты:</h2>
+<ul id="missingProductList"></ul>
+<p id="aiStatus"></p>
   </body>
 </html>
