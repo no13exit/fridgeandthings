@@ -1,33 +1,12 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список продуктов</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-    .purchased {text-decoration: line-through;}
-    li:hover {cursor: pointer;}
-</style>
-    <script type="module" src="./script.js"></script>
-  </head>
-  <body>
-    <h1>Список продуктов</h1>
-
-    <label for="productInput">Продукт:</label>
-    <input id="productInput" type="text" />
-
-    <button id="addButton" type="button">Добавить</button>
-    <button id="showListButton" type="button">Показать список</button>
-    <ul id="productList"></ul>
-
-    <label for="dishInput">Блюдо:</label>
-<input id="dishInput" type="text" placeholder="Например, борщ">
-
-<button id="findMissingButton" type="button">
-    Найти недостающие
-</button>
-<h2>Недостающие продукты:</h2>
-<ul id="missingProductList"></ul>
-<p id="aiStatus"></p>
-  </body>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main id="app"></main>
+</body>
 </html>
