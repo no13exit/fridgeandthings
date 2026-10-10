@@ -1,0 +1,86 @@
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7028d4, #db438c);
+    font-family: Arial, sans-serif;
+    color: #291348;
+}
+
+.main-title {
+    color: #ffe66d;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    text-shadow: 5px 5px #291348;
+}
+
+.calc-card {
+    height: 100%;
+    padding: 30px;
+    border: 4px solid #291348;
+    border-radius: 20px;
+    box-shadow: 8px 8px #291348;
+}
+
+.math-card {
+    background: #ff80bb;
+}
+
+.geometry-card {
+    background: #79efd5;
+}
+
+.calc-card h2 {
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.form-control,
+.form-select {
+    border: 3px solid #291348;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.action-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ffe66d;
+    color: #291348;
+    border: 3px solid #291348;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 4px 4px #291348;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background: #fff3ac;
+}
+
+.result-box {
+    margin-top: 24px;
+    padding: 16px;
+    background: white;
+    border: 3px solid #291348;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+
+
+[hidden] {
+    display: none !important;
+}
+
+/* Hide number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
